@@ -22,7 +22,16 @@ export async function createCompletion(prompt: string) {
   const messages: any = [
     {
       role: 'user',
-      content: `Write a blog post around 200 words about the following topic: "${prompt}" in markdown format.`
+      content: `Write a blog post around 200 words about the following topic: "${prompt}", and response in markdown format. Be attention\n\n:
+      - Do not use markdown front matter, for example:
+      ---\n
+      Title: 
+      ---
+      - Use ## for content title, for example:
+      ## Title\n\n
+
+      Content\n\n
+      `
     }
   ]
 
