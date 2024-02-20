@@ -9,6 +9,10 @@ import { auth } from '@clerk/nextjs'
 
 const openai = new OpenAI({ apiKey: process.env.AI_API_KEY })
 
+export const config = {
+  runtime: 'edge'
+}
+
 export async function createCompletion(prompt: string) {
   if (!prompt) {
     return { error: 'Prompt is required' }
