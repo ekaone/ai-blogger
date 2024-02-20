@@ -4,6 +4,10 @@ import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import { auth } from '@clerk/nextjs'
 
+export const config = {
+  runtime: 'edge'
+}
+
 export async function createCompletion(prompt: string) {
   if (!prompt) {
     return { error: 'Prompt is required' }
