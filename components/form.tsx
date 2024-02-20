@@ -34,7 +34,7 @@ export default function Form() {
     <section className='mx-auto max-w-lg'>
       <Card className='border-0 shadow-none'>
         <CardHeader className='text-center'>
-          <CardTitle>Next AI Blogger</CardTitle>
+          <CardTitle>Blogger AI-powered</CardTitle>
           <CardDescription>Generate a blog post about anything</CardDescription>
         </CardHeader>
         <CardContent>

@@ -7,7 +7,7 @@ import { supabase } from '@/lib/supabase'
 import { revalidatePath } from 'next/cache'
 import { auth } from '@clerk/nextjs'
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+const openai = new OpenAI({ apiKey: process.env.AI_API_KEY })
 
 export async function createCompletion(prompt: string) {
   if (!prompt) {
